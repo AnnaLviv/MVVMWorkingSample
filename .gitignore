@@ -9,8 +9,8 @@
 /MVVM.Core.Test/obj
 /MVVM.Model/bin
 /MVVM.Model/obj
-/MVVM.Model.Shared/bin
-/MVVM.Model.Shared/obj
+/MVVM.Service/bin
+/MVVM.Service/obj
 /MVVM.View/bin
 /MVVM.View/obj
 /MVVM.ViewModel/bin

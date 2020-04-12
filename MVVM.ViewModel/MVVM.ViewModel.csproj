@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MVVM.Model.Shared\MVVM.Model.csproj" />
-    <ProjectReference Include="..\MVVM.Model\MVVM.Service.csproj" />
+    <ProjectReference Include="..\MVVM.Model\MVVM.Model.csproj" />
+    <ProjectReference Include="..\MVVM.Service\MVVM.Service.csproj" />
   </ItemGroup>
 
 </Project>
