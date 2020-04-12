@@ -7,6 +7,6 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVM.Model.Shared\MVVM.Model.csproj" />
+    <ProjectReference Include="..\MVVM.Model\MVVM.Model.csproj" />
   </ItemGroup>
 </Project>

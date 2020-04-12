@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MVVM.Core\MVVM.Core.csproj" />
-    <ProjectReference Include="..\MVVM.Model.Shared\MVVM.Model.csproj" />
+    <ProjectReference Include="..\MVVM.Model\MVVM.Model.csproj" />
   </ItemGroup>
 
 </Project>

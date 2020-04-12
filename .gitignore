@@ -2,7 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/MVVM/v16
+/.vs
 /MVVM.Core/bin
 /MVVM.Core/obj
 /MVVM.Core.Test/bin
