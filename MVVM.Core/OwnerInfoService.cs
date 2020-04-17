@@ -18,7 +18,7 @@ namespace MVVM.Core
             var configuredGreetingName = configuration.GetSection(Configuration.OwnerInfo)[Configuration.GreetingName];
             var configuredOwnerInfo = new OwnerInfo(configuredUserName, configuredGreetingName);
 
-            await Task.Delay(5000);
+            await Task.Delay(5000).ConfigureAwait(false);
 
             var isOwner = configuredOwnerInfo.Equals(ownerInfo);
             return isOwner;
