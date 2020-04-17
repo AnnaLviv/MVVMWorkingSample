@@ -15,6 +15,9 @@ namespace MVVM.ViewModel
             this.ownerInfoService = ownerInfoService;
             CheckOwnerInfoCommand = new AsyncCommand(execute: CheckOwnerInfoAction,
                 canExecute: (object ob) => { return CanCheckOwnerInfo; });
+
+            Title = "Owner Verification";
+            Subtitle = "Verifies whether input credentials match configured owner";
         }
 
         public string UserName { get; set; }

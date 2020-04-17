@@ -3,29 +3,34 @@
                     xmlns:viewModel="clr-namespace:MVVM.ViewModel;assembly=MVVM.ViewModel">
 
     <DataTemplate DataType="{x:Type viewModel:OwnerInfoVerificationViewModel}">
-        <Grid Margin="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="User Name: " Margin="0,0,2,0" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding UserName}" VerticalAlignment="Center" Width="200" />
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Greeting Name: " Margin="0,0,2,0" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding GreetingName}" VerticalAlignment="Center" Width="200" />
-
-            <Button Grid.Row="2" Command="{Binding CheckOwnerInfoCommand}" IsEnabled="{Binding CanCheckOwnerInfo}" Content="Verify" Width="Auto" Height="20" VerticalAlignment="Center"/>
-
-            <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding OwnerInfoResult, Mode=OneWay}" VerticalAlignment="Center" Width="Auto" />
+        <StackPanel Orientation="Vertical" Margin="10">
+            <TextBlock Text="{Binding Title}" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Subtitle}" FontSize="10" FontStyle="Italic"/>
             
-        </Grid>
+            <Grid Margin="0,20,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="User Name: " Margin="0,0,2,0" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding UserName}" VerticalAlignment="Center" Width="200" />
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Greeting Name: " Margin="0,0,2,0" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding GreetingName}" VerticalAlignment="Center" Width="200" />
+
+                <Button Grid.Row="2" Command="{Binding CheckOwnerInfoCommand}" IsEnabled="{Binding CanCheckOwnerInfo}" Content="Verify" Width="Auto" Height="20" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding OwnerInfoResult, Mode=OneWay}" VerticalAlignment="Center" Width="Auto" />
+            
+            </Grid>
+        </StackPanel>
     </DataTemplate>
     
 </ResourceDictionary>
